@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>希望杯中小学作文大赛</title>
+    <meta name="viewport"content="user-scalable=0">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" data-url="url(images/background.jpg)">
+            <div class="logo">
+                <img class="ani" src="images/logo_hope.gif" alt="" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="0.3s">
+                <h3 class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1.5s" swiper-animate-delay="0.5s">希望杯中小学作文大赛</h3>
+            </div>
+            <div><h3 class="ani" swiper-animate-effect="rollIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">开赛啦</h3></div>
+            <div class="pub-passdown"><img src="images/pub-1.png" alt=""></div>
+        </div>
+        <div class="swiper-slide">
+            <div class="secont-title">
+                <div class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1.5s" swiper-animate-delay="0.2s">写</div>
+                <div class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1.5s" swiper-animate-delay="0.3s">作</div>
+                <div class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1.5s" swiper-animate-delay="0.4s">让</div>
+                <div class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1.5s" swiper-animate-delay="0.5s">心</div>
+                <div class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1.5s" swiper-animate-delay="0.6s">灵</div>
+                <div class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1.5s" swiper-animate-delay="0.7s">更</div>
+                <div class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1.5s" swiper-animate-delay="0.8s">自</div>
+                <div class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1.5s" swiper-animate-delay="0.9s">由</div>
+            </div>
+            <div class="pub-passdown"><img src="images/pub-1.png" alt=""></div>
+        </div>
+        <div class="swiper-slide ">
+            <div class="ani third-title" swiper-animate-effect="zoomInUp">
+                <div>活动参与对象</div>
+                <div>全国中小学生</div>
+            </div>
+            <div class="ani third-content" swiper-animate-effect="zoomInUp">
+                1、初赛：作文题材、文体不限（如诗歌、散文、小说、记叙文、论说文等）。字数：小学：200-1000字；初中：800-1500字；高中：1000-2500字。
+                <br/>2、决赛（现场作文）：初赛一、二、三等奖获得者可赴北京参加现场命题作文决赛。（具体时间、地点另行通知）
+            </div>
+            <div class="pub-passdown"><img src="images/pub-1.png" alt=""></div>
+        </div>
+        <div class="swiper-slide">
+            <div class="ani preliminary" swiper-animate-effect="slideInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="0.2s">初赛</div>
+            <div class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1.5s" swiper-animate-delay="1.7s">2016年10月21日--2017年4月30日</div>
+            <div class="ani finals" swiper-animate-effect="slideInRight" swiper-animate-duration="1.5s" swiper-animate-delay="0.2s">决赛</div>
+            <div class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="1.5s" swiper-animate-delay="1.7s">2017年7月</div>
+
+            <button class="ani button" swiper-animate-effect="slideInUp" swiper-animate-duration="1.5s" swiper-animate-delay="0.2s">立即报名</button>
+        </div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+</div>
+<script src="./js/swiper.min.js"></script>
+<script src="./js/swiper.animate1.0.2.min.js"></script>
+<script type="text/javascript">
+    var mySwiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        zoom: false,
+        zoomToggle: false,
+        onInit: function(swiper){
+            swiperAnimateCache(swiper);
+            swiperAnimate(swiper);
+        },
+        onSlideChangeEnd: function(swiper){
+            swiperAnimate(swiper);
+        },
+        onTransitionEnd: function(swiper){
+            swiperAnimate(swiper);
+        },
+    });
+</script>
+</body>
+</html>
