@@ -106,12 +106,13 @@ html,body{
 .preliminary{
     position: absolute;
     font-size:4em;
+    height:3em;
+    text-align: center;
     top:24%;
     left:15%;
     -webkit-writing-mode: vertical-lr;
     -ms-writing-mode: vertical-lr;
     writing-mode: vertical-lr;
-    text-align: center;
 }
 .preliminary+div{
     position: absolute;
@@ -124,6 +125,8 @@ html,body{
 .finals{
     position: absolute;
     font-size:4em;
+    height:3em;
+    text-align: center;
     top:24%;
     left:55%;
     -webkit-writing-mode: vertical-lr;
